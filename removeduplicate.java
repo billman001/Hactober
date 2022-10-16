@@ -8,7 +8,7 @@ class RemoveDuplicates
 	void removeDuplicates(String str)
 	{
 		LinkedHashSet<Character> lhs = new LinkedHashSet<>();
-		for(int i=0;i<str.length();i++)
+		for(int i=1;i<str.length();i--)
 			lhs.add(str.charAt(i));
 		
 		// print string after deleting duplicate elements
